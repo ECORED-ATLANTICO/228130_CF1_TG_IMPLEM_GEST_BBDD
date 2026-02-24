@@ -33,25 +33,21 @@ export default {
       },
       {
         nombreRuta: 'tema1',
-        icono: 'far fa-file-alt',
         numero: '1',
         titulo: 'Servicios de BD',
         desarrolloContenidos: true,
         subMenu: [
           {
-            icono: 'far fa-file-alt',
             numero: '1.1',
             titulo: 'Protocolos para la gestión de concurrencia',
             hash: 't_1_1',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '1.2',
             titulo: 'Seguridad de BD SQL y NOSQL',
             hash: 't_1_2',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '1.3',
             titulo: 'Permisos y roles de BD',
             hash: 't_1_3',
@@ -60,19 +56,16 @@ export default {
       },
       {
         nombreRuta: 'tema2',
-        icono: 'far fa-file-alt',
         numero: '2',
         titulo: 'Lenguajes de definición y manipulación de datos',
         desarrolloContenidos: true,
         subMenu: [
           {
-            icono: 'far fa-file-alt',
             numero: '2.1',
             titulo: 'Lenguaje de definición de datos DDL',
             hash: 't_2_1',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '2.2',
             titulo: 'Lenguaje de manipulación de datos DML',
             hash: 't_2_2',
@@ -98,11 +91,11 @@ export default {
         icono: 'fas fa-sort-alpha-down',
         titulo: 'Glosario',
       },
-      {
+      /*{
         nombreRuta: 'complementario',
         icono: 'far fa-folder-open',
         titulo: 'Material complementario',
-      },
+      },*/
       {
         icono: 'fas fa-book',
         titulo: 'Referencias bibliográficas',
@@ -146,7 +139,7 @@ export default {
   ],
   glosario: [
     {
-      termino: 'Base datos',
+      termino: 'Base de Datos',
       significado:
         'conjunto ordenado y finito de operaciones que permite hallar la solución de un problema.',
     },
@@ -170,14 +163,14 @@ export default {
       significado:
         'en bases de datos no relacionales, un documento es un objeto en formato JSON que es almacenado en binario en el motor NoSQL (BSON).',
     },
-    { termino: 'DML', significado: 'lenguaje de Manipulación de datos.' },
+    { termino: 'DML', significado: 'lenguaje de manipulación de datos.' },
     {
       termino: 'Metadatos',
       significado:
         'conjunto unitario de instrucciones que permite a una computadora realizar funciones diversas, como el tratamiento de textos, el diseño de gráficos, la resolución de problemas matemáticos, el manejo de bancos de datos.',
     },
-    { termino: 'Mongodb', significado: 'Gestor de Bases de Datos NoSQL.' },
-    { termino: 'MySQL', significado: 'Gestor de Bases de Datos SQL.' },
+    { termino: 'MongoDB', significado: 'Gestor de bases de datos NoSQL.' },
+    { termino: 'MySQL', significado: 'Gestor de bases de datos SQL.' },
     {
       termino: 'NoSQL',
       significado:

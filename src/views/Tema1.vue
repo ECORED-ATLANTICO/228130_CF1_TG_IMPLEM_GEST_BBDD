@@ -7,7 +7,7 @@
         span 1
       h1 Servicios de BD
 
-    p Las bases de datos son un sistema de información importante para las organizaciones, ya que provee el almacenamiento de registros organizados de manera digital; desde las grandes aplicaciones multiusuario hasta los teléfonos móviles y agendas electrónicas utilizan bases de datos como un elemento fundamental en el desarrollo comercial; es decir, con los datos se pueden realizar ventas, compras o suministrar información de un lugar.
+    p Las bases de datos son un sistema de información importante para las organizaciones, ya que proveen el almacenamiento de registros organizados de manera digital; desde las grandes aplicaciones multiusuario hasta los teléfonos móviles y agendas electrónicas utilizan bases de datos como un elemento fundamental en el desarrollo comercial; es decir, con los datos se pueden realizar ventas, compras o suministrar información de un lugar.
 
     .bloque-texto-a.color-acento-botones.p-4.p-md-4.mb-5
       .row.m-0.align-items-center.justify-content-between
@@ -35,7 +35,7 @@
         .col-lg-8
           .contenedor-dashed.p-3
             .bloque-texto-g1__texto.p-3
-              p.mb-0 La cantidad de transacciones de registros por minutos son muy altas, de ahí la importancia de la administración de concurrencia, permitiendo la coherencia, integridad y durabilidad de los datos que son procesados por los SGDB por esto es una tarea vital. La elección de una técnica de manejo de concurrencia que permita la serialización de las transacciones y la coherencia de las operaciones realizadas sobre dichos datos, debe ejecutarse de acuerdo a la naturaleza del problema que se esté tratando de resolver. (Arduino, & Alfonzo, 2018).
+              p.mb-0 La cantidad de transacciones de registros por minuto es muy alta, de ahí la importancia de la administración de concurrencia, permitiendo la coherencia, integridad y durabilidad de los datos que son procesados por los SGDB; por esto es una tarea vital. La elección de una técnica de manejo de concurrencia que permita la serialización de las transacciones y la coherencia de las operaciones realizadas sobre dichos datos, debe ejecutarse de acuerdo a la naturaleza del problema que se esté tratando de resolver. (Arduino, & Alfonzo, 2018).
               br
               br
               | Las técnicas o métodos para administrar la cantidad de transacciones de información sobre dichos datos deben ejecutarse de acuerdo a la naturaleza del problema que se está tratando de resolver, para el caso, veremos un modelo de gestión de compras y ventas, demostrando que con la aplicación de técnicas mencionadas de acuerdo con acciones que no registran un bloqueo o que el bloque resultaría costoso para la operatividad de la organización en el rendimiento del sistema; es decir, en tiempo y recurso busca como objetivo primordial mantener la integridad y coherencia de los datos.
@@ -51,8 +51,7 @@
     .col-md-9.mx-auto.mb-5
       .titulo-sexto.color-acento-contenido(data-aos='fade-right')
         h5 Tabla 1
-        br
-        em Ejemplo de compra bases de datos relacionales
+        P.mb-0 Ejemplo de compra bases de datos relacionales
       .tabla-a.color-acento-contenido.mb-5
         table
           thead
@@ -79,7 +78,7 @@
                   img.riddle(:src="rid1" @mouseover="rid1 = f3inv" @mouseleave="rid1 = f3" , alt='signos de interrogación')
             p Dos sentencias UPDATE que actualicen un mismo producto reduciendo el proceso del mismo a una unidad, podrían terminar en que una de ellas no finalice la operación. Si pensamos en un UPDATE como una sucesión de una lectura y una escritura, puede que ambos UPDATE hagan la lectura; por ejemplo, de una acción de 10 segundos y después las escrituras, decrementan ese dato, quedando el resultado en 9 segundos, mientras que lo correcto era un resultado de 8 segundos.
 
-            p Si tenemos una sentencia que primero comprueba que hay una transacción del producto P, y después inserta un nuevo PEDIDO de diez unidades del producto P, que tiene un proceso de 10 segundos, seguido de un UPDATE al proceso por esa cantidad. Puede que otra inserción de un pedido se ejecute antes del UPDATE seguido de la comprobación, realizando quedar el proceso del producto en negativo.
+            p Si tenemos una sentencia que primero comprueba que hay una transacción del producto P, y después inserta un nuevo PEDIDO de diez unidades del producto P, que tiene un proceso de 10 segundos, seguido de un UPDATE al proceso por esa cantidad. Puede que otra inserción de un pedido se ejecute antes del UPDATE seguido de la comprobación, haciendo quedar el proceso del producto en negativo.
 
 
     h3(data-aos="fade-right")
@@ -207,7 +206,7 @@
             .fblanco.borde2.p-3
               h4 Bloqueos binarios
               p La primera forma de bloquear es utilizar bloqueos binarios. En un bloqueo binario, cada transacción debe solicitar el bloqueo de cada parte de datos A que vaya a utilizar antes de ingresar a él, sea para leerlo o escribirlo, a través de una operación bloquear(A). Deberá redimir todos los bloqueos, mediante una operación desbloquear(A) de modo que otros procesos puedan tomarlos.
-              p.mb-0 Este sistema de bloqueos tiene una descripción muy simple, ya que solo necesita mantener una tabla que indica qué partes de los datos está bloqueada y por cuál transacción.
+              p.mb-0 Este sistema de bloqueos tiene una descripción muy simple, ya que solo necesita mantener una tabla que indica qué partes de los datos están bloqueadas y por cuál transacción.
       .col-lg-4
         img(src='@/assets/curso/temas/t1/f4.svg', alt='imagen alusiva a la seguridad')
 
@@ -289,7 +288,7 @@
           p “Una base de datos es un conjunto de datos almacenados en memoria externa que están organizados mediante una estructura de datos. Cada base de datos ha sido diseñada para satisfacer los requisitos de información de una empresa u otro tipo de organización como, por ejemplo, una universidad o un hospital”. (Marqués, 2009).
         .tarjeta.color-acento-contenido.p-3(x="73%" y="32%" numero="2")
           .h5.mb-2 BD NoSQL
-          p Cuando se habla de bases de datos “NoSQL” se refiere a tipos de bases de datos no relacionales que almacenan datos de forma distinta a las tablas relacionales. Adicionalmente, las bases de datos NoSQL se pueden consultar utilizando API (aplicación web que permite realizar búsquedas de información) de lenguaje natural, lenguajes de consulta estructurados declarativos y lenguajes de consulta mediante ejemplo, también se les llama bases de datos “no solo SQL”; es decir, que una base de datos NoSQL hace las consultas en archivos o documentos, gráficos o en Bases SQL.
+          p Cuando se habla de bases de datos “NoSQL” se refiere a tipos de bases de datos no relacionales que almacenan datos de forma distinta a las tablas relacionales. Adicionalmente, las bases de datos NoSQL se pueden consultar utilizando API (aplicación web que permite realizar búsquedas de información) de lenguaje natural, lenguajes de consulta estructurados declarativos y lenguajes de consulta mediante ejemplo, también se les llama bases de datos “no solo SQL”; es decir, que una base de datos NoSQL hace las consultas en archivos o documentos, gráficos o en bases SQL.
 
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
@@ -299,13 +298,7 @@
       .col-lg-1.col-sm-2
         img(src='@/assets/curso/temas/t1/f8.svg', alt='icono de base de datos')
       .col-lg-11.col-sm-10
-        p.mb-0 La seguridad es un elemento trascendental que tienen las organizaciones en sus bases de datos, de acuerdo a su disposición en una variedad de herramientas, controles y medidas trazadas para establecer y conservar la
-          b confidencialidad
-          | , la
-          b integridad
-          | y la
-          b disponibilidad
-          | de los registros o datos. De estos tres conceptos que definen la seguridad de datos nos enfocaremos en la confidencialidad, ya que, es el elemento más importante y sensible, en gran parte, concerniente a la seguridad de datos.
+        p.mb-0 La seguridad es un elemento trascendental que tienen las organizaciones en sus bases de datos, de acuerdo a su disposición en una variedad de herramientas, controles y medidas trazadas para establecer y conservar la <b>confidencialidad</b> la <b>integridad</b> y la <b>disponibilidad</b> de los registros o datos. De estos tres conceptos que definen la seguridad de datos nos enfocaremos en la confidencialidad, ya que, es el elemento más importante y sensible, en gran parte, concerniente a la seguridad de datos.
 
     .bloque-texto-a.color-acento-botones.p-4.p-md-4.mb-5.bg-1
       .row.m-0.align-items-center.justify-content-between
@@ -314,27 +307,24 @@
             .bloque-texto-a__texto.p-4
               p La seguridad de las bases de datos se enfoca en los siguientes ítems:
               ul.lista-ul--color
-                li
+                li.d-flex
                   i.fas.fa-check
                   | El sistema de gestión de bases de datos (SGBD).
-                li
+                li.d-flex
                   i.fas.fa-check
                   | Los datos de la base de datos.
-                li
+                li.d-flex
                   i.fas.fa-check
-                  p.mb-0 El servidor de base de datos físico y/o el servidor de base de datos virtual y el
-                    em hardware
-                    | subyacente.
-                li
+                  p.mb-0 El servidor de base de datos físico y/o el servidor de base de datos virtual y el <em>hardware</em> subyacente.
+                li.d-flex
                   i.fas.fa-check
                   | Cualquier aplicación relacionada.
-                li
+                li.d-flex
                   i.fas.fa-check
                   | La infraestructura informática y/o de red utilizada para acceder a la base de datos.
         .col-lg-4.mb-4.mb-lg-0
 
-    p.mb-5 Para las organizaciones, la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina
-      b regla de Anderson.
+    p.mb-5 Para las organizaciones, la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina <b>regla de Anderson</b>.
 
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
@@ -349,7 +339,7 @@
       .col-lg-8
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris")
           div(titulo="Seguridad física")
-            p Cuando el servidor de bases de datos es local o en un centro de datos en la nube, es imprescindible que esté dentro de un entorno seguro y con control de clima, es decir, que este en un cuarto con acceso restringido al público y su temperatura este entre 17 °C o 21 °C. Por otra parte, si el servidor de bases de datos está en un centro de datos de nube, el proveedor será el encargado de ello.
+            p Cuando el servidor de bases de datos es local o en un centro de datos en la nube, es imprescindible que esté dentro de un entorno seguro y con control de clima, es decir, que esté en un cuarto con acceso restringido al público y su temperatura esté entre 17 °C y 21 °C. Por otra parte, si el servidor de bases de datos está en un centro de datos de nube, el proveedor será el encargado de ello.
           div(titulo="Controles de acceso administrativo y de red")
             p Cuando se habla de control de acceso decimos que es la cantidad de usuarios que acceden a la base de datos. Como medida de protección de datos es aconsejable tener el mínimo de usuarios que operen la base de datos y sus permisos deben limitarse a los niveles mínimos necesarios donde podrán realizar sus trabajos. Adicionalmente, el acceso a la red debe estar limitada al nivel mínimo de permisos necesarios, esto con el fin que los usuarios no realicen acciones que no estén dentro de su trabajo.
           div(titulo="Seguridad de cuenta/dispositivo de usuario final")
@@ -358,9 +348,7 @@
           div(titulo="Cifrado")
             p Es una parte muy importante de la seguridad de datos, deben estar cifrados los datos de la base de datos y los datos de credenciales, adicionalmente, se deberán proteger con el mejor cifrado mientras no estén operando o en tránsito.
           div(titulo="Seguridad de <em>software</em> de base de datos")
-            p Es importante utilizar la última versión del
-              em software
-              | de gestión de bases de datos aplicando los parches cuando sean suministrados por el proveedor.
+            p Es importante utilizar la última versión del <em>software</em> de gestión de bases de datos aplicando los parches cuando sean suministrados por el proveedor.
           div(titulo="Seguridad del servidor de aplicaciones/<em>web</em>")
             p Cualquier aplicación o servidor web que interactúen con la base de datos, están susceptibles a los ataques y deben estar supervisados de manera constante, para pruebas de seguridad, acompañadas de las mejores prácticas.
 
@@ -404,9 +392,7 @@
     #t_1_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 1.3 Permisos y roles de BD
 
-    p Permite la creación y modificación de roles y usuarios en la base de datos actual. Dado que el
-      em userAdminrol
-      | concede a los usuarios cualquier privilegio a cualquier usuario, incluidos ellos mismos, el rol también entrega indirectamente permisos de superusuario a la base de datos o, si se limita a la admin base de datos, al clúster.
+    p Permite la creación y modificación de roles y usuarios en la base de datos actual. Dado que el <em>userAdminrol</em> concede a los usuarios cualquier privilegio a cualquier usuario, incluidos ellos mismos, el rol también entrega indirectamente permisos de superusuario a la base de datos o, si se limita a la admin base de datos, al clúster.
 
     .row.justify-content-center.mb-5
       .col-lg-4
@@ -457,11 +443,7 @@
               | }
 
           div(titulo="<em>changePassword</em>")
-            p El usuario puede cambiar la contraseña de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos ingresando el siguiente comando; ojo, recuerde que debemos estar en las bases de datos admin de MongoDB para hacer este cambio;
-              em db.changeUserPassword(“admin”, passwordPrompt())
-              | , cuando solicite el
-              em password
-              | registrar el nuevo para hacer el cambio.
+            p El usuario puede cambiar la contraseña de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos ingresando el siguiente comando; ojo, recuerde que debemos estar en las bases de datos admin de MongoDB para hacer este cambio; <em>db.changeUserPassword(“admin”, passwordPrompt())</em>, cuando solicite el <em>password</em> registrar el nuevo para hacer el cambio.
 
           div(titulo="<em>createRole</em>")
             p Crea un rol y especifica sus privilegios. El rol se aplica a la base de datos en la que ejecuta el comando. El createRole comando devuelve un error de rol duplicado si el rol ya existe en la base de datos.
@@ -625,7 +607,7 @@
               | )
 
           div(titulo="<em>viewUser</em>")
-            p El usuario puede ver la información de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos indicamos el siguiente comando en la consola:
+            p El usuario puede ver la información de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos; indicamos el siguiente comando en la consola:
             ul.lista-ul--color
               li
                 i.fas.fa-check
