@@ -131,9 +131,7 @@
                 td
                   code DELETE FROM tabla1 WHERE key = some_key;
 
-    h3.mb-4(data-aos="fade-right")
-      i.fas.fa-square.cac.me-2
-      | Conociendo los lenguajes de manipulación y definición de datos
+    h3.titulo-tercero(data-aos="fade-right") Conociendo los lenguajes de manipulación y definición de datos
 
     p.mb-5 Entendamos los lenguajes de manipulación y definición de datos:
 

@@ -38,9 +38,7 @@
               p La cantidad de transacciones de registros por minuto es muy alta, de ahí la importancia de la administración de concurrencia, permitiendo la coherencia, integridad y durabilidad de los datos que son procesados por los SGDB; por esto es una tarea vital. La elección de una técnica de manejo de concurrencia que permita la serialización de las transacciones y la coherencia de las operaciones realizadas sobre dichos datos, debe ejecutarse de acuerdo a la naturaleza del problema que se esté tratando de resolver. (Arduino, & Alfonzo, 2018).
               p.mb-0 Las técnicas o métodos para administrar la cantidad de transacciones de información sobre dichos datos deben ejecutarse de acuerdo a la naturaleza del problema que se está tratando de resolver, para el caso, veremos un modelo de gestión de compras y ventas, demostrando que con la aplicación de técnicas mencionadas de acuerdo con acciones que no registran un bloqueo o que el bloque resultaría costoso para la operatividad de la organización en el rendimiento del sistema; es decir, en tiempo y recurso busca como objetivo primordial mantener la integridad y coherencia de los datos.
 
-    h3.mb-4(data-aos="fade-right")
-      i.fas.fa-square.cac.me-2
-      | Control de concurrencia
+    h3.titulo-tercero(data-aos="fade-right") Control de concurrencia
 
     p Al hablar de control de concurrencia en las aplicaciones, primordialmente sobre el inicio y el fin de las transacciones de datos que se pueden ejecutar, al mismo tiempo, se evitan bloqueos que se pudieran dar durante su ejecución. El acceso compartido de los datos que realizan estas transacciones simultáneas, puede transferir, como resultado, información inconsistente, generando incoherencias en estos datos o, simplemente, causando la pérdida de los mismos, aportando, aleatoriamente, el resultado que se puede dar en el proceso de las lecturas y escrituras simultáneas. Esta situación ha llevado a diseñar e implementar diferentes estrategias de control de concurrencia de datos, las cuales se encargan de evitar los problemas descritos, de modo que estos procesos de control, se crean transparentes para los desarrolladores de las aplicaciones, en el momento de escribir su código.
 
@@ -79,9 +77,7 @@
             p.mb-0 Si tenemos una sentencia que primero comprueba que hay una transacción del producto P, y después inserta un nuevo PEDIDO de diez unidades del producto P, que tiene un proceso de 10 segundos, seguido de un UPDATE al proceso por esa cantidad. Puede que otra inserción de un pedido se ejecute antes del UPDATE seguido de la comprobación, haciendo quedar el proceso del producto en negativo.
 
 
-    h3.mb-4(data-aos="fade-right")
-      i.fas.fa-square.cac.me-2
-      | Acceso concurrente a los datos
+    h3.titulo-tercero(data-aos="fade-right") Acceso concurrente a los datos
 
     p.mb-5 Ocurre cuando dos transacciones distintas intentan acceder concurrentemente a los mismos datos, por lo que es posible que se presenten los siguientes casos:
 
@@ -143,9 +139,7 @@
                 td <em>SELECT SUM</em> (saldos) <em>FROM</em> cuenta;
                 td
 
-    h3.mb-4(data-aos="fade-right")
-      i.fas.fa-square.cac.me-2
-      | Técnicas para controlar las recurrencias
+    h3.titulo-tercero(data-aos="fade-right") Técnicas para controlar las recurrencias
 
     p.mb-5 Dentro de las técnicas más utilizadas, se encuentran los bloqueos, como también el control multiversión y las marcas de tiempo:
 
@@ -206,9 +200,7 @@
             p
               a(href="https://www.youtube.com/watch?v=fBogDpofRiQ", target="_blank") https://www.youtube.com/watch?v=fBogDpofRiQ
 
-    h3.mb-4(data-aos="fade-right")
-      i.fas.fa-square.cac.me-2
-      | Definiciones sobre bases de datos SQL y NOSQL
+    h3.titulo-tercero(data-aos="fade-right") Definiciones sobre bases de datos SQL y NOSQL
 
     p.mb-5 Veamos las definiciones al respecto de cada base de datos:
 
@@ -224,9 +216,7 @@
           .h5.mb-2 BD NoSQL
           p Cuando se habla de bases de datos “NoSQL” se refiere a tipos de bases de datos no relacionales que almacenan datos de forma distinta a las tablas relacionales. Adicionalmente, las bases de datos NoSQL se pueden consultar utilizando API (aplicación web que permite realizar búsquedas de información) de lenguaje natural, lenguajes de consulta estructurados declarativos y lenguajes de consulta mediante ejemplo, también se les llama bases de datos “no solo SQL”; es decir, que una base de datos NoSQL hace las consultas en archivos o documentos, gráficos o en bases SQL.
 
-    h3.mb-4(data-aos="fade-right")
-      i.fas.fa-square.cac.me-2
-      | Definición BD NoSQL
+    h3.titulo-tercero(data-aos="fade-right") Definición BD NoSQL
 
     .row.justify-content-center.align-items-center.mb-5
       .col-6.col-md-4.col-lg-1.mb-3.mb-lg-0
@@ -260,9 +250,7 @@
 
     p.mb-5 Para las organizaciones, la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina <b>regla de Anderson</b>.
 
-    h3.mb-4(data-aos="fade-right")
-      i.fas.fa-square.cac.me-2
-      | Diferentes tipos de seguridad que existen en las bases de datos
+    h3.titulo-tercero(data-aos="fade-right") Diferentes tipos de seguridad que existen en las bases de datos
 
     p.mb-5  A continuación, comprenderemos los diferentes tipos de seguridad, que existen en las bases de datos:
 
@@ -297,9 +285,7 @@
           div(titulo="Auditoría").ms-5
             p Los formatos deben hacer parte del administrador de bases de datos, esto con el fin de registrar todos los inicios de sesión en el servidor de bases de datos y el sistema operativo también debe registrar las operaciones realizadas en datos confidenciales. Las auditorías estándar de seguridad de base de datos deben realizarse regularmente, anualmente o antes, si hay registros de fugas de información.
 
-    h3.mb-4(data-aos="fade-right")
-      i.fas.fa-square.cac.me-2 
-      | Creación de usuarios en una base de datos SQL en servidor <em>AppServer</em> con <em>MySQL</em>.
+    h3.titulo-tercero(data-aos="fade-right") Creación de usuarios en una base de datos SQL en servidor <em>AppServer</em> con <em>MySQL</em>.
 
     p.mb-5 A continuación, veamos el video el cual explicará con detalle, la creación de usuarios en una base de datos NoSQL en MongoDB:
 
