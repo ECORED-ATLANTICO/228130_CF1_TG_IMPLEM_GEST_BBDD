@@ -192,19 +192,19 @@ export default {
       referencia:
         'Escobar, O., Núñez, J & Pulido, E. (2019). <em>Base de datos</em>. Editorial Patria.',
       link:
-        'https://elibro-net.bdigital.sena.edu.co/es/ereader/senavirtual/121283?page=214',
+        'https://es.scribd.com/document/728742385/BaseDatos-Pulido-Escobar-Nunez-eBook',
     },
     {
       referencia:
         'González, E. (2015). <em>Salvaguarda y seguridad de los datos: administración de bases de datos (UF1473)</em>. IC Editorial.',
       link:
-        'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/44140',
+        'https://www.editorialelearning.com/catalogo/media/iverve/uploadpdf/1526032139_UF1473_demo.pdf',
     },
     {
       referencia:
         'Marqués, M. (2009). <em>Bases de datos</em>. D - Universitat Jaume I. Servei de Comunicació i Publicacions.',
       link:
-        'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/51645',
+        'https://bdigital.uvhm.edu.mx/wp-content/uploads/2020/05/Bases-de-Datos.pdf',
     },
     {
       referencia: 'Mongodb. (2022). MongoDB, Inc.',
@@ -219,7 +219,7 @@ export default {
       referencia:
         'Sarasa, A. (2020). <em>Introducción a las bases de datos NoSQL usando MongoDB</em>. Editorial UOC.',
       link:
-        'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/58524?fs_q=mongodb&prev=fs    ',
+        'https://dokumen.pub/introduccion-a-las-bases-de-datos-nosql-usando-mongodb-9788491162506.html',
     },
   ],
   creditos: {
